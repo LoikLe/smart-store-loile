@@ -38,3 +38,10 @@ ALWAYS activate the .venv before working on the project.Activate whenever you op
 ```shell
 .venv\Scripts\activate
 ```
+### Part 3 (04) - Activate and Run Python Script
+
+```shell
+.\.venv\Scripts\activate
+py 
+```
+If any new external dependencies have been added to any Python scripts, add the external dependencies to requirements.txt and re-run the install dependencies process first.
