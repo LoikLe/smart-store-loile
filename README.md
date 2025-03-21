@@ -1,47 +1,100 @@
-# smart-store-loile
-## First project for Module 1 of BI and Analytics
+# smart-sales-starter-files
 
-Execute all commands from a PowerShell terminal in the root project folder.
+Starter files to initialize the smart sales project.
 
-### Part 2 (04) - Git Add-Commit-Push
+-----
+
+## Project Setup Guide (1-Mac/Linux)
+
+Run all commands from a terminal in the root project folder. 
+
+### Step 1A - Create a Local Project Virtual Environment
 
 ```shell
-git add .
-git commit -m "Add .gitignore and requirements.txt files"
-git push -u origin main
-```
-After subsequent changes, you may be able to use a simpler version of the last command:
-```shell
-git push
+python3 -m venv .venv
 ```
 
-### Part 2 (05) - Create Virtual Environment
+### Step 1B - Activate the Virtual Environment
+
+```shell
+source .venv/bin/activate
+```
+
+### Step 1C - Install Packages
+
+```shell
+python3 -m pip install --upgrade -r requirements.txt
+```
+
+### Step 1D - Optional: Verify .venv Setup
+
+```shell
+python3 -m datafun_venv_checker.venv_checker
+```
+
+### Step 1E - Run the initial project script
+
+```shell
+python3 scripts/data_prep.py
+```
+
+-----
+
+## Project Setup Guide (2-Windows)
+
+Run all commands from a PowerShell terminal in the root project folder.
+
+### Step 2A - Create a Local Project Virtual Environment
 
 ```shell
 py -m venv .venv
 ```
 
-### Part 3 (01) - Git Pull Before Changes
-
-Before making any changes to a project, ALWAYS pull the latest changes from the remote repository on GitHub. Keep both locations up-to-date and in sync.
-
-Pulling ensures that: You work with the latest code. Merge conflicts are minimized. Collaboration stays smooth.
-
-```shell
-git pull origin main
-```
-
-### Part 3 (02) - Activate Virtual Environment
-
-ALWAYS activate the .venv before working on the project.Activate whenever you open a new terminal.
+### Step 2B - Activate the Virtual Environment
 
 ```shell
 .venv\Scripts\activate
 ```
-### Part 3 (04) - Activate and Run Python Script
+
+### Step 2C - Install Packages
 
 ```shell
-.\.venv\Scripts\activate
-py 
+py -m pip install --upgrade -r requirements.txt
 ```
-If any new external dependencies have been added to any Python scripts, add the external dependencies to requirements.txt and re-run the install dependencies process first.
+
+### Step 2D - Optional: Verify .venv Setup
+
+```shell
+py -m datafun_venv_checker.venv_checker
+```
+
+### Step 2E - Run the initial project script
+
+```shell
+py scripts/data_prep.py
+```
+## Git Commands Used
+Below are the Git commands I used to initialize my project, track changes, and push updates to GitHub.
+
+```sh
+git init                 # Initialize Git in the project folder (only needed once)
+git add .                # Add all new and modified files to Git tracking
+git commit -m "Commit message"  # Commit changes with a meaningful message
+git push -u origin main  # Push changes to GitHub on the main branch
+```
+-----
+
+## Initial Package List
+
+- pip
+- loguru
+- ipykernel
+- jupyterlab
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- plotly
+- pyspark==4.0.0.dev1
+- pyspark[sql]
+- git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
