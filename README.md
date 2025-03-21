@@ -73,7 +73,7 @@ py -m datafun_venv_checker.venv_checker
 ```shell
 py scripts/data_prep.py
 ```
-## Git Commands Used
+## Git Commands Used for Module 2
 Below are the Git commands I used to initialize my project, track changes, and push updates to GitHub.
 
 ```sh
@@ -84,16 +84,12 @@ git init
 git add .  
 
 # Commit the changes with a meaningful message  
-git commit -m "Add starter files"  
-
-# Set the remote repository (only needed if not set up yet)  
-git remote add origin <your-github-repo-url>  
-git branch -M main  
+git commit -m "add starter files"  
 
 # Push changes to GitHub on the main branch  
 git push -u origin main  
 
-# After making additional changes, use these commands:  
+# After making additional changes on README, use these commands:  
 git add .  
 git commit -m "Update README with commands"  
 git push  
