@@ -77,10 +77,26 @@ py scripts/data_prep.py
 Below are the Git commands I used to initialize my project, track changes, and push updates to GitHub.
 
 ```sh
-git init                 # Initialize Git in the project folder (only needed once)
-git add .                # Add all new and modified files to Git tracking
-git commit -m "Commit message"  # Commit changes with a meaningful message
-git push -u origin main  # Push changes to GitHub on the main branch
+# Initialize a new Git repository (only needed once)  
+git init  
+
+# Add all files to Git tracking  
+git add .  
+
+# Commit the changes with a meaningful message  
+git commit -m "Add starter files"  
+
+# Set the remote repository (only needed if not set up yet)  
+git remote add origin <your-github-repo-url>  
+git branch -M main  
+
+# Push changes to GitHub on the main branch  
+git push -u origin main  
+
+# After making additional changes, use these commands:  
+git add .  
+git commit -m "Update README with commands"  
+git push  
 ```
 -----
 
