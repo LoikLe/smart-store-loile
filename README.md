@@ -44,6 +44,12 @@ python3 scripts/data_prep.py
 
 Run all commands from a PowerShell terminal in the root project folder.
 
+### Step 2 - Git Pull Before Changes
+
+```shell
+git pull origin main
+```
+
 ### Step 2A - Create a Local Project Virtual Environment
 
 ```shell
