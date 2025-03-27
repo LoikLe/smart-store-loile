@@ -187,13 +187,8 @@ def standardize_formats(df: pd.DataFrame) -> pd.DataFrame:
     """
     logger.info(f"FUNCTION START: standardize_formats with dataframe shape={df.shape}")
     
-    # TODO: OPTIONAL ADVANCED Implement standardization for product data
-    # Suggestion: Consider standardizing text fields, units, and categorical variables
-    # Examples (update based on your column names and types):
-    # df['product_name'] = df['product_name'].str.title()  # Title case for product names
-    # df['category'] = df['category'].str.lower()  # Lowercase for categories
-    # df['price'] = df['price'].round(2)  # Round prices to 2 decimal places
-    # df['weight_unit'] = df['weight_unit'].str.upper()  # Uppercase units
+    # Correct misspelled supplier names
+    df['supplier'] = df['supplier'].replace({'Nikee': 'Nike', 'Googlle': 'Google'})
     
     logger.info("Completed standardizing formats")
     return df

@@ -187,6 +187,11 @@ def main() -> None:
     if changed_columns:
         logger.info(f"Cleaned column names: {', '.join(changed_columns)}")
 
+    # **Standardize 'PreferredContactMethod' values**
+    if "PreferredContactMethod" in df.columns:
+        df["PreferredContactMethod"] = df["PreferredContactMethod"].replace({"Txt": "Text"})
+        logger.info("Standardized 'PreferredContactMethod' values (Txt -> Text)")
+
     # Remove duplicates
     df = remove_duplicates(df)
 
