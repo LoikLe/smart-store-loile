@@ -1,4 +1,4 @@
-transactionid,saledate,customerid,productid,storeid,campaignid,saleamount,bonuspoints,paymenttype
+TransactionID,SaleDate,CustomerID,ProductID,StoreID,CampaignID,SaleAmount,BonusPoints,PaymentType
 550,1/6/2024,1008,102,404,0,39.1,5,Cash
 551,1/6/2024,1009,105,403,0,19.78,2,Credit
 552,1/16/2024,1004,107,404,0,335.1,24,Check
@@ -42,7 +42,7 @@ transactionid,saledate,customerid,productid,storeid,campaignid,saleamount,bonusp
 590,5/8/2024,1005,107,405,1,603.18,45,Cash
 591,5/8/2024,1004,101,404,1,7138.08,568,Credit
 592,5/17/2024,1006,107,406,1,670.2,53,Check
-593,5/17/2024,1008,104,404,1,431.0,34,Debit
+593,5/17/2024,1008,104,404,1,431,34,Debit
 594,5/19/2024,1003,101,403,1,1586.24,127,Cash
 595,5/19/2024,1006,108,406,1,25.12,2,Credit
 596,5/29/2024,1011,105,401,0,98.9,8,Check
