@@ -220,6 +220,49 @@ def validate_data(df: pd.DataFrame) -> pd.DataFrame:
     logger.info("Data validation complete")
     return df
 
+import numpy as np
+
+def fix_incorrect_bonus_points(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Fix incorrect bonus points by replacing them with random whole numbers.
+    
+    Args:
+        df (pd.DataFrame): Input DataFrame with incorrect bonus points.
+    
+    Returns:
+        pd.DataFrame: Updated DataFrame with corrected bonus points.
+    """
+    logger.info("FUNCTION START: fix_incorrect_bonus_points")
+
+    # Confirm column name exists and is correct
+    if 'bonuspoints' not in df.columns:
+        logger.error("Column 'bonuspoints' not found in DataFrame!")
+        logger.info(f"Available columns: {df.columns.tolist()}")
+        return df
+
+    # Convert to numeric in case of incorrect dtype
+    df['bonuspoints'] = pd.to_numeric(df['bonuspoints'], errors='coerce')
+
+    # Define incorrect values that need replacing
+    incorrect_values = {999, 9999, 1}
+    
+    # Create a mask to find incorrect values
+    mask = df['bonuspoints'].isin(incorrect_values)
+
+    if mask.sum() > 0:
+        # Generate random bonus points between 5 and 500
+        random_points = np.random.randint(5, 501, size=mask.sum())
+
+        # Force replacement
+        df.loc[mask, 'bonuspoints'] = random_points
+
+        logger.info(f"Corrected {mask.sum()} incorrect bonus point entries.")
+
+    else:
+        logger.info("No incorrect bonus points found.")
+
+    return df
+
 def main() -> None:
     """
     Main function for processing product data.
@@ -241,19 +284,21 @@ def main() -> None:
     # Log initial dataframe information
     logger.info(f"Initial dataframe columns: {', '.join(df.columns.tolist())}")
     logger.info(f"Initial dataframe shape: {df.shape}")
-    
+
     # Clean column names
     original_columns = df.columns.tolist()
     df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_')
-    
-    # Log if any column names changed
-    changed_columns = [f"{old} -> {new}" for old, new in zip(original_columns, df.columns) if old != new]
-    if changed_columns:
-        logger.info(f"Cleaned column names: {', '.join(changed_columns)}")
+
+    # Log cleaned column names
+    logger.info(f"Final dataframe columns: {', '.join(df.columns.tolist())}")
 
     # Process data
     df = remove_duplicates(df)
     df = handle_missing_values(df)
+
+    # Fix incorrect bonus points with random values
+    df = fix_incorrect_bonus_points(df)
+
     df = standardize_formats(df)
     df = remove_outliers(df)
     df = validate_data(df)

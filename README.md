@@ -102,6 +102,47 @@ git push
 ```
 -----
 
+## Data Cleaning & Prepare for ETL (P3)
+
+In this module, we focus on cleaning and preparing the data for analysis.
+
+### Step 3a - Create Folders
+1. data
+   - raw
+   - prepared
+2. scripts
+3. utils
+
+### Step 3b - Download Data Files
+Find raw data .csv files in course repo and download to data/raw folder
+- customers_data.csv
+- products_data.csv
+- sales_data.csv
+
+### Step 3c - Create logger.py and data_prep.py
+
+1. Create `logger.py` file under utils folder
+2. Find `logger.py` file in course repo and copy/paste contents into local `logger.py`
+3. Create `data_prep.py` file under scripts folder
+4. Find `data_prep.py` file under `smart-sales-starter-files` repo and copy/paste nto local `data_prep.py`
+5. Execute Python script:
+```
+py scripts\data_prep.py
+```
+### Step 3d - Run Data Scrubber Tests
+Before running the main data preparation script, execute the following test script to ensure the data_scrubber.py is working properly:
+
+```shell
+py tests\test_data_scrubber.py
+```
+### Step 3e - Final Data Preparation
+After confirming that the data_scrubber.py is working as expected, run the main data preparation script:
+
+```shell
+py scripts/data_prep.py
+```
+-----
+
 ## Initial Package List
 
 - pip
@@ -116,3 +157,4 @@ git push
 - pyspark==4.0.0.dev1
 - pyspark[sql]
 - git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
+

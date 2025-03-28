@@ -145,7 +145,8 @@ class DataScrubber:
             ValueError: If the specified column not found in the DataFrame.
         """
         try:
-            self.df[column] = self.df[column].str.upper().str.strip()
+            # Convert to string, apply upper(), and strip whitespace 
+            self.df[column] = self.df[column].astype(str).str.upper().str.strip()
             return self.df
         except KeyError:
             raise ValueError(f"Column name '{column}' not found in the DataFrame.")

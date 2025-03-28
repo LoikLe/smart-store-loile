@@ -702,3 +702,450 @@ dtype: int64
 2025-03-26 19:53:03.209 | INFO     | __main__:main:264 - ==================================
 2025-03-26 19:53:03.209 | INFO     | __main__:main:265 - FINISHED prepare_sales_data.py
 2025-03-26 19:53:03.210 | INFO     | __main__:main:266 - ==================================
+2025-03-27 20:21:33.228 | INFO     | __main__:main:59 - ======================
+2025-03-27 20:21:33.228 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-03-27 20:21:33.229 | INFO     | __main__:main:61 - ======================
+2025-03-27 20:21:33.229 | INFO     | __main__:main:63 - ========================
+2025-03-27 20:21:33.229 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-03-27 20:21:33.229 | INFO     | __main__:main:65 - ========================
+2025-03-27 20:21:33.280 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\customers_data_prepared.csv
+2025-03-27 20:21:33.280 | INFO     | __main__:main:85 - ========================
+2025-03-27 20:21:33.281 | INFO     | __main__:main:86 - Starting PRODUCTS prep
+2025-03-27 20:21:33.281 | INFO     | __main__:main:87 - ========================
+2025-03-27 20:21:33.299 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\products_data_prepared.csv
+2025-03-27 20:21:33.299 | INFO     | __main__:main:103 - ========================
+2025-03-27 20:21:33.300 | INFO     | __main__:main:104 - Starting SALES prep
+2025-03-27 20:21:33.301 | INFO     | __main__:main:105 - ========================
+2025-03-27 20:21:33.339 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 20:21:33.340 | INFO     | __main__:main:124 - ======================
+2025-03-27 20:21:33.340 | INFO     | __main__:main:125 - FINISHED data_prep.py
+2025-03-27 20:21:33.341 | INFO     | __main__:main:126 - ======================
+2025-03-27 20:25:01.917 | INFO     | __main__:main:162 - ==================================
+2025-03-27 20:25:01.917 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-27 20:25:01.918 | INFO     | __main__:main:164 - ==================================
+2025-03-27 20:25:01.918 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:25:01.918 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:25:01.919 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:25:01.919 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-loile\scripts
+2025-03-27 20:25:01.920 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-27 20:25:01.920 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-loile\data\raw\customers_data.csv
+2025-03-27 20:25:01.925 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-27 20:25:01.926 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-27 20:25:01.926 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-27 20:25:01.928 | INFO     | __main__:main:193 - Standardized 'PreferredContactMethod' values (Txt -> Text)
+2025-03-27 20:25:01.929 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-27 20:25:01.930 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-27 20:25:01.931 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-27 20:25:01.931 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-27 20:25:01.933 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-27 20:25:01.934 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-27 20:25:01.934 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-27 20:25:01.935 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-27 20:25:01.935 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-27 20:25:01.936 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-27 20:25:01.936 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-27 20:25:01.939 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\customers_data_prepared.csv
+2025-03-27 20:25:01.940 | INFO     | __main__:main:207 - ==================================
+2025-03-27 20:25:01.941 | INFO     | __main__:main:208 - FINISHED prepare_customers_data.py
+2025-03-27 20:25:01.941 | INFO     | __main__:main:209 - ==================================
+2025-03-27 20:25:37.507 | INFO     | __main__:main:222 - ==================================
+2025-03-27 20:25:37.507 | INFO     | __main__:main:223 - STARTING prepare_products_data.py
+2025-03-27 20:25:37.508 | INFO     | __main__:main:224 - ==================================
+2025-03-27 20:25:37.508 | INFO     | __main__:main:226 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:25:37.509 | INFO     | __main__:main:227 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:25:37.509 | INFO     | __main__:main:228 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:25:37.510 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-27 20:25:37.511 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\products_data.csv
+2025-03-27 20:25:37.516 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 8 rows and 6 columns
+2025-03-27 20:25:37.516 | INFO     | __main__:main:237 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, YearAdded, Supplier
+2025-03-27 20:25:37.517 | INFO     | __main__:main:238 - Initial dataframe shape: (8, 6)
+2025-03-27 20:25:37.518 | INFO     | __main__:main:247 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, YearAdded -> yearadded, Supplier -> supplier
+2025-03-27 20:25:37.518 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-27 20:25:37.551 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 20:25:37.552 | INFO     | __main__:remove_duplicates:107 - 8 records remaining after removing duplicates.
+2025-03-27 20:25:37.553 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-27 20:25:37.561 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+productid      0
+productname    0
+category       0
+unitprice      0
+yearadded      0
+supplier       0
+dtype: int64
+2025-03-27 20:25:37.563 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+productid      0
+productname    0
+category       0
+unitprice      0
+yearadded      0
+supplier       0
+dtype: int64
+2025-03-27 20:25:37.564 | INFO     | __main__:handle_missing_values:141 - 8 records remaining after handling missing values.
+2025-03-27 20:25:37.564 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-27 20:25:37.565 | INFO     | __main__:standardize_formats:193 - Completed standardizing formats
+2025-03-27 20:25:37.566 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-27 20:25:37.566 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 20:25:37.567 | INFO     | __main__:remove_outliers:175 - 8 records remaining after removing outliers.
+2025-03-27 20:25:37.567 | INFO     | __main__:validate_data:206 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-27 20:25:37.567 | INFO     | __main__:validate_data:215 - Data validation complete
+2025-03-27 20:25:37.568 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-27 20:25:37.572 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\products_data_prepared.csv
+2025-03-27 20:25:37.573 | INFO     | __main__:main:259 - ==================================
+2025-03-27 20:25:37.573 | INFO     | __main__:main:260 - FINISHED prepare_products_data.py
+2025-03-27 20:25:37.574 | INFO     | __main__:main:261 - ==================================
+2025-03-27 20:26:29.699 | INFO     | __main__:main:227 - ==================================
+2025-03-27 20:26:29.700 | INFO     | __main__:main:228 - STARTING prepare_sales_data.py
+2025-03-27 20:26:29.700 | INFO     | __main__:main:229 - ==================================
+2025-03-27 20:26:29.700 | INFO     | __main__:main:231 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:26:29.701 | INFO     | __main__:main:232 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:26:29.701 | INFO     | __main__:main:233 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:26:29.701 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 20:26:29.702 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\sales_data.csv
+2025-03-27 20:26:29.707 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 20:26:29.707 | INFO     | __main__:main:242 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 20:26:29.708 | INFO     | __main__:main:243 - Initial dataframe shape: (94, 9)
+2025-03-27 20:26:29.709 | INFO     | __main__:main:252 - Cleaned column names: TransactionID -> transactionid, SaleDate -> saledate, CustomerID -> customerid, ProductID -> productid, StoreID -> storeid, CampaignID -> campaignid, SaleAmount -> saleamount, BonusPoints -> bonuspoints, PaymentType -> paymenttype
+2025-03-27 20:26:29.709 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 20:26:29.712 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 20:26:29.712 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-27 20:26:29.713 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 20:26:29.714 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:26:29.716 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:26:29.719 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-27 20:26:29.719 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 20:26:29.720 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-27 20:26:29.720 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 20:26:29.721 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 20:26:29.721 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-27 20:26:29.722 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 20:26:29.722 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-27 20:26:29.722 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 20:26:29.727 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 20:26:29.727 | INFO     | __main__:main:264 - ==================================
+2025-03-27 20:26:29.728 | INFO     | __main__:main:265 - FINISHED prepare_sales_data.py
+2025-03-27 20:26:29.729 | INFO     | __main__:main:266 - ==================================
+2025-03-27 20:30:46.860 | INFO     | __main__:main:269 - ==================================
+2025-03-27 20:30:46.861 | INFO     | __main__:main:270 - STARTING prepare_sales_data.py
+2025-03-27 20:30:46.861 | INFO     | __main__:main:271 - ==================================
+2025-03-27 20:30:46.862 | INFO     | __main__:main:273 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:30:46.862 | INFO     | __main__:main:274 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:30:46.862 | INFO     | __main__:main:275 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:30:46.863 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 20:30:46.863 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\sales_data.csv
+2025-03-27 20:30:46.868 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 20:30:46.868 | INFO     | __main__:main:284 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 20:30:46.869 | INFO     | __main__:main:285 - Initial dataframe shape: (94, 9)
+2025-03-27 20:30:46.869 | INFO     | __main__:main:292 - Final dataframe columns: transactionid, saledate, customerid, productid, storeid, campaignid, saleamount, bonuspoints, paymenttype
+2025-03-27 20:30:46.870 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 20:30:46.872 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 20:30:46.872 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-27 20:30:46.873 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 20:30:46.874 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:30:46.876 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:30:46.878 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-27 20:30:46.878 | INFO     | __main__:fix_incorrect_bonus_points:234 - FUNCTION START: fix_incorrect_bonus_points
+2025-03-27 20:30:46.879 | ERROR    | __main__:fix_incorrect_bonus_points:238 - Column 'bonus_points' not found in DataFrame!
+2025-03-27 20:30:46.879 | INFO     | __main__:fix_incorrect_bonus_points:239 - Available columns: ['transactionid', 'saledate', 'customerid', 'productid', 'storeid', 'campaignid', 'saleamount', 'bonuspoints', 'paymenttype']
+2025-03-27 20:30:46.880 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 20:30:46.880 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-27 20:30:46.881 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 20:30:46.881 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 20:30:46.882 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-27 20:30:46.882 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 20:30:46.882 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-27 20:30:46.883 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 20:30:46.887 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 20:30:46.887 | INFO     | __main__:main:308 - ==================================
+2025-03-27 20:30:46.888 | INFO     | __main__:main:309 - FINISHED prepare_sales_data.py
+2025-03-27 20:30:46.888 | INFO     | __main__:main:310 - ==================================
+2025-03-27 20:39:13.926 | INFO     | __main__:main:265 - ==================================
+2025-03-27 20:39:13.927 | INFO     | __main__:main:266 - STARTING prepare_sales_data.py
+2025-03-27 20:39:13.927 | INFO     | __main__:main:267 - ==================================
+2025-03-27 20:39:13.927 | INFO     | __main__:main:269 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:39:13.928 | INFO     | __main__:main:270 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:39:13.928 | INFO     | __main__:main:271 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:39:13.928 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 20:39:13.929 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\sales_data.csv
+2025-03-27 20:39:13.933 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 20:39:13.933 | INFO     | __main__:main:280 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 20:39:13.934 | INFO     | __main__:main:281 - Initial dataframe shape: (94, 9)
+2025-03-27 20:39:13.935 | INFO     | __main__:main:288 - Final dataframe columns: transactionid, saledate, customerid, productid, storeid, campaignid, saleamount, bonuspoints, paymenttype
+2025-03-27 20:39:13.935 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 20:39:13.937 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 20:39:13.938 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-27 20:39:13.939 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 20:39:13.940 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:39:13.943 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:39:13.945 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-27 20:39:13.946 | INFO     | __main__:fix_incorrect_bonus_points:235 - FUNCTION START: fix_incorrect_bonus_points
+2025-03-27 20:39:13.946 | ERROR    | __main__:fix_incorrect_bonus_points:239 - Column 'bonus_points' not found in DataFrame!
+2025-03-27 20:39:13.946 | INFO     | __main__:fix_incorrect_bonus_points:240 - Available columns: ['transactionid', 'saledate', 'customerid', 'productid', 'storeid', 'campaignid', 'saleamount', 'bonuspoints', 'paymenttype']
+2025-03-27 20:39:13.947 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 20:39:13.948 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-27 20:39:13.948 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 20:39:13.948 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 20:39:13.949 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-27 20:39:13.949 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 20:39:13.950 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-27 20:39:13.950 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 20:39:13.954 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 20:39:13.955 | INFO     | __main__:main:304 - ==================================
+2025-03-27 20:39:13.955 | INFO     | __main__:main:305 - FINISHED prepare_sales_data.py
+2025-03-27 20:39:13.956 | INFO     | __main__:main:306 - ==================================
+2025-03-27 20:40:56.675 | INFO     | __main__:main:270 - ==================================
+2025-03-27 20:40:56.676 | INFO     | __main__:main:271 - STARTING prepare_sales_data.py
+2025-03-27 20:40:56.676 | INFO     | __main__:main:272 - ==================================
+2025-03-27 20:40:56.676 | INFO     | __main__:main:274 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 20:40:56.677 | INFO     | __main__:main:275 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 20:40:56.677 | INFO     | __main__:main:276 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 20:40:56.678 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 20:40:56.678 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\sales_data.csv
+2025-03-27 20:40:56.683 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 20:40:56.683 | INFO     | __main__:main:285 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 20:40:56.684 | INFO     | __main__:main:286 - Initial dataframe shape: (94, 9)
+2025-03-27 20:40:56.685 | INFO     | __main__:main:293 - Final dataframe columns: transactionid, saledate, customerid, productid, storeid, campaignid, saleamount, bonuspoints, paymenttype
+2025-03-27 20:40:56.685 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 20:40:56.687 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 20:40:56.687 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-27 20:40:56.688 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 20:40:56.689 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:40:56.692 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 20:40:56.693 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-27 20:40:56.694 | INFO     | __main__:fix_incorrect_bonus_points:235 - FUNCTION START: fix_incorrect_bonus_points
+2025-03-27 20:40:56.695 | INFO     | __main__:fix_incorrect_bonus_points:259 - Corrected 5 incorrect bonus point entries.
+2025-03-27 20:40:56.696 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 20:40:56.696 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-27 20:40:56.697 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 20:40:56.697 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 20:40:56.698 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-27 20:40:56.698 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 20:40:56.699 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-27 20:40:56.699 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 20:40:56.703 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 20:40:56.704 | INFO     | __main__:main:309 - ==================================
+2025-03-27 20:40:56.704 | INFO     | __main__:main:310 - FINISHED prepare_sales_data.py
+2025-03-27 20:40:56.705 | INFO     | __main__:main:311 - ==================================
+2025-03-27 21:08:58.572 | INFO     | __main__:main:59 - ======================
+2025-03-27 21:08:58.572 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-03-27 21:08:58.573 | INFO     | __main__:main:61 - ======================
+2025-03-27 21:08:58.573 | INFO     | __main__:main:63 - ========================
+2025-03-27 21:08:58.573 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-03-27 21:08:58.574 | INFO     | __main__:main:65 - ========================
+2025-03-27 21:08:58.600 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\customers_data_prepared.csv
+2025-03-27 21:08:58.600 | INFO     | __main__:main:85 - ========================
+2025-03-27 21:08:58.601 | INFO     | __main__:main:86 - Starting PRODUCTS prep
+2025-03-27 21:08:58.601 | INFO     | __main__:main:87 - ========================
+2025-03-27 21:08:58.618 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\products_data_prepared.csv
+2025-03-27 21:08:58.619 | INFO     | __main__:main:103 - ========================
+2025-03-27 21:08:58.619 | INFO     | __main__:main:104 - Starting SALES prep
+2025-03-27 21:08:58.620 | INFO     | __main__:main:105 - ========================
+2025-03-27 21:08:58.642 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 21:08:58.642 | INFO     | __main__:main:124 - ======================
+2025-03-27 21:08:58.643 | INFO     | __main__:main:125 - FINISHED data_prep.py
+2025-03-27 21:08:58.643 | INFO     | __main__:main:126 - ======================
+2025-03-27 21:09:34.467 | INFO     | __main__:main:162 - ==================================
+2025-03-27 21:09:34.468 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-27 21:09:34.468 | INFO     | __main__:main:164 - ==================================
+2025-03-27 21:09:34.468 | INFO     | __main__:main:166 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 21:09:34.469 | INFO     | __main__:main:167 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 21:09:34.469 | INFO     | __main__:main:168 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 21:09:34.470 | INFO     | __main__:main:169 - scripts folder: C:\Projects\smart-store-loile\scripts
+2025-03-27 21:09:34.470 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-27 21:09:34.470 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-loile\data\raw\customers_data.csv
+2025-03-27 21:09:34.475 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-27 21:09:34.475 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LoyaltyPoints, PreferredContactMethod
+2025-03-27 21:09:34.476 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-27 21:09:34.477 | INFO     | __main__:main:193 - Standardized 'PreferredContactMethod' values (Txt -> Text)
+2025-03-27 21:09:34.477 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-27 21:09:34.479 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-27 21:09:34.479 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-27 21:09:34.480 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-27 21:09:34.481 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-27 21:09:34.481 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-27 21:09:34.482 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-27 21:09:34.482 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-27 21:09:34.483 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-27 21:09:34.483 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-27 21:09:34.483 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-27 21:09:34.487 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\customers_data_prepared.csv
+2025-03-27 21:09:34.488 | INFO     | __main__:main:207 - ==================================
+2025-03-27 21:09:34.488 | INFO     | __main__:main:208 - FINISHED prepare_customers_data.py
+2025-03-27 21:09:34.489 | INFO     | __main__:main:209 - ==================================
+2025-03-27 21:09:46.759 | INFO     | __main__:main:222 - ==================================
+2025-03-27 21:09:46.760 | INFO     | __main__:main:223 - STARTING prepare_products_data.py
+2025-03-27 21:09:46.760 | INFO     | __main__:main:224 - ==================================
+2025-03-27 21:09:46.761 | INFO     | __main__:main:226 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 21:09:46.761 | INFO     | __main__:main:227 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 21:09:46.761 | INFO     | __main__:main:228 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 21:09:46.762 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-27 21:09:46.762 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\products_data.csv
+2025-03-27 21:09:46.767 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 8 rows and 6 columns
+2025-03-27 21:09:46.767 | INFO     | __main__:main:237 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, YearAdded, Supplier
+2025-03-27 21:09:46.768 | INFO     | __main__:main:238 - Initial dataframe shape: (8, 6)
+2025-03-27 21:09:46.769 | INFO     | __main__:main:247 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, YearAdded -> yearadded, Supplier -> supplier
+2025-03-27 21:09:46.769 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-27 21:09:46.770 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 21:09:46.771 | INFO     | __main__:remove_duplicates:107 - 8 records remaining after removing duplicates.
+2025-03-27 21:09:46.771 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-27 21:09:46.772 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+productid      0
+productname    0
+category       0
+unitprice      0
+yearadded      0
+supplier       0
+dtype: int64
+2025-03-27 21:09:46.774 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+productid      0
+productname    0
+category       0
+unitprice      0
+yearadded      0
+supplier       0
+dtype: int64
+2025-03-27 21:09:46.775 | INFO     | __main__:handle_missing_values:141 - 8 records remaining after handling missing values.
+2025-03-27 21:09:46.776 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-27 21:09:46.777 | INFO     | __main__:standardize_formats:193 - Completed standardizing formats
+2025-03-27 21:09:46.777 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-27 21:09:46.777 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 21:09:46.778 | INFO     | __main__:remove_outliers:175 - 8 records remaining after removing outliers.
+2025-03-27 21:09:46.778 | INFO     | __main__:validate_data:206 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-27 21:09:46.778 | INFO     | __main__:validate_data:215 - Data validation complete
+2025-03-27 21:09:46.779 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-27 21:09:46.782 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\products_data_prepared.csv
+2025-03-27 21:09:46.783 | INFO     | __main__:main:259 - ==================================
+2025-03-27 21:09:46.783 | INFO     | __main__:main:260 - FINISHED prepare_products_data.py
+2025-03-27 21:09:46.784 | INFO     | __main__:main:261 - ==================================
+2025-03-27 21:09:57.255 | INFO     | __main__:main:270 - ==================================
+2025-03-27 21:09:57.256 | INFO     | __main__:main:271 - STARTING prepare_sales_data.py
+2025-03-27 21:09:57.256 | INFO     | __main__:main:272 - ==================================
+2025-03-27 21:09:57.256 | INFO     | __main__:main:274 - Root project folder: C:\Projects\smart-store-loile
+2025-03-27 21:09:57.257 | INFO     | __main__:main:275 - data / raw folder: C:\Projects\smart-store-loile\data\raw
+2025-03-27 21:09:57.257 | INFO     | __main__:main:276 - data / prepared folder: C:\Projects\smart-store-loile\data\prepared
+2025-03-27 21:09:57.257 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 21:09:57.258 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-loile\data\raw\sales_data.csv
+2025-03-27 21:09:57.263 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 21:09:57.264 | INFO     | __main__:main:285 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 21:09:57.264 | INFO     | __main__:main:286 - Initial dataframe shape: (94, 9)
+2025-03-27 21:09:57.265 | INFO     | __main__:main:293 - Final dataframe columns: transactionid, saledate, customerid, productid, storeid, campaignid, saleamount, bonuspoints, paymenttype
+2025-03-27 21:09:57.265 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 21:09:57.268 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 21:09:57.268 | INFO     | __main__:remove_duplicates:107 - 94 records remaining after removing duplicates.
+2025-03-27 21:09:57.269 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 21:09:57.270 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 21:09:57.273 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+transactionid    0
+saledate         0
+customerid       0
+productid        0
+storeid          0
+campaignid       0
+saleamount       0
+bonuspoints      0
+paymenttype      0
+dtype: int64
+2025-03-27 21:09:57.275 | INFO     | __main__:handle_missing_values:141 - 94 records remaining after handling missing values.
+2025-03-27 21:09:57.275 | INFO     | __main__:fix_incorrect_bonus_points:235 - FUNCTION START: fix_incorrect_bonus_points
+2025-03-27 21:09:57.277 | INFO     | __main__:fix_incorrect_bonus_points:259 - Corrected 5 incorrect bonus point entries.
+2025-03-27 21:09:57.277 | INFO     | __main__:standardize_formats:188 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 21:09:57.278 | INFO     | __main__:standardize_formats:198 - Completed standardizing formats
+2025-03-27 21:09:57.278 | INFO     | __main__:remove_outliers:155 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 21:09:57.278 | INFO     | __main__:remove_outliers:174 - Removed 0 outlier rows
+2025-03-27 21:09:57.279 | INFO     | __main__:remove_outliers:175 - 94 records remaining after removing outliers.
+2025-03-27 21:09:57.279 | INFO     | __main__:validate_data:211 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 21:09:57.280 | INFO     | __main__:validate_data:220 - Data validation complete
+2025-03-27 21:09:57.280 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 21:09:57.284 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-loile\data\prepared\sales_data_prepared.csv
+2025-03-27 21:09:57.284 | INFO     | __main__:main:309 - ==================================
+2025-03-27 21:09:57.285 | INFO     | __main__:main:310 - FINISHED prepare_sales_data.py
+2025-03-27 21:09:57.285 | INFO     | __main__:main:311 - ==================================
