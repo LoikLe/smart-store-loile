@@ -1,8 +1,8 @@
-ProductID,ProductName,Category,Unitprice,YearAdded,Supplier
+ProductID,ProductName,Category,UnitPrice,YearAdded,Supplier
 101,laptop,Electronics,793.12,2025,Apple
 102,hoodie,Clothing,39.1,2023,Nike
 103,cable,Electronics,22.76,2021,Samsung
-104,hat,Clothing,43.1,202,Adidas
+104,hat,Clothing,43.1,2020,Adidas
 105,football,Sports,19.78,2019,Wilson
 106,controller,Electronics,88.98,2022,Sony
 107,jacket,Clothing,67.02,2023,North Face
