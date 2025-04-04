@@ -143,6 +143,78 @@ py scripts/data_prep.py
 ```
 -----
 
+## Data Warehouse (P4)
+
+This module stores cleaned sales, product, and customer data in a SQLite database (smart_sales.db). Data is extracted, transformed, and loaded (ETL) from pre-processed CSV files into three main tables: customer, product, and sale, for direct querying or integration with business intelligence tools.
+
+### Running the ETL Script
+
+To create the database, tables, and insert data from the cleaned CSV files, run the following command:
+
+```shell
+py scripts\etl_to_dw.py
+```
+
+## Database Schema
+
+### `sale` Table
+
+| Column Name     | Data Type | Description                                |
+|-----------------|-----------|--------------------------------------------|
+| transaction_id | INTEGER   | Primary key                                |
+| sale_date      | DATE      | Sale date                                 |
+| customer_id    | INTEGER   | Foreign key referencing `customer` table   |
+| product_id     | INTEGER   | Foreign key referencing `product` table    |
+| store_id       | INTEGER   | Foreign key referencing `store` table      |
+| campaign_id    | INTEGER   | Foreign key referencing `campaign` table   |
+| sale_amount    | REAL      | Total amount of sale                       |
+| bonus_points   | INTEGER   | Bonus points earned                        |
+| payment_type   | TEXT      | Type of payment                            |
+
+---
+
+### `customer` Table
+
+| Column Name         | Data Type | Description                                   |
+|--------------------|-----------|-----------------------------------------------|
+| customer_id        | INTEGER   | Primary key                                   |
+| name               | TEXT      | Customer's name                               |
+| region             | TEXT      | Region where customer resides                  |
+| join_date          | DATE      | Customer's join date                           |
+| loyalty_points     | INTEGER   | Loyalty points customer earned                 |
+| preferred_contact  | TEXT      | Preferred contact method for customer          |
+
+---
+
+### `product` Table
+
+| Column Name      | Data Type | Description                                 |
+|------------------|-----------|---------------------------------------------|
+| product_id      | INTEGER   | Primary key                                 |
+| product_name    | TEXT      | Name of the product                          |
+| category        | TEXT      | Category of the product                      |
+| unit_price      | REAL      | Price per unit of the product                |
+| year_added      | INTEGER   | Year the product was added                   |
+| supplier        | TEXT      | Name of the supplier                          |
+
+---
+
+## Table Previews
+
+### Customer Table
+![Customer Table](customer_table_screenshot.png)
+
+### Product Table
+![Product Table](product_table_screenshot.png)
+
+### Sale Table
+![Sale Table](sale_table_screenshot.png)
+
+## Loading Data into the Data Warehouse
+1. Prepared data files are loaded into the SQLite database using `etl_to_dw.py`:
+   ```sh
+   python scripts/etl_to_dw.py
+   
 ## Initial Package List
 
 - pip
