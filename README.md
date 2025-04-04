@@ -202,13 +202,16 @@ py scripts\etl_to_dw.py
 ## Table Previews
 
 ### Customer Table
-![Customer Table](customer_table_screenshot.png)
+![customer_table_screenshot](https://github.com/user-attachments/assets/821f2f10-1954-49d9-b80b-586ff821f441)
+eenshot.png)
 
 ### Product Table
-![Product Table](product_table_screenshot.png)
+![product_table_screenshot](https://github.com/user-attachments/assets/c8f747f0-60ba-4fb3-8e5b-3d99b5624401)
+
 
 ### Sale Table
-![Sale Table](sale_table_screenshot.png)
+![sale_table_screenshot](https://github.com/user-attachments/assets/8878059b-9c4f-47a4-a033-772cb25b9e34)
+
 
 ## Loading Data into the Data Warehouse
 1. Prepared data files are loaded into the SQLite database using `etl_to_dw.py`:
