@@ -217,7 +217,45 @@ eenshot.png)
 1. Prepared data files are loaded into the SQLite database using `etl_to_dw.py`:
    ```sh
    python scripts/etl_to_dw.py
-   
+
+## Power BI (P3)
+
+This module is about learning how to work with large amounts of data using tools like Power BI and Apache Spark. It looks at how cloud platforms and big data processing come together to help us analyze and visualize data faster and more efficiently.
+
+## SQL Queries and Reports
+
+The queries below are used to sort top customers by their total spending: 
+
+```shell
+= Odbc.Query("dsn=SmartSalesDSN", "SELECT c.name, SUM(s.sale_amount) AS total_spent
+FROM sales s
+JOIN customers c ON s.customer_id = c.customer_id
+GROUP BY c.name
+ORDER BY total_spent DESC")
+```
+
+## Design Choices
+
+The dashboard was created with the following goals in mind:
+
+- Key Metrics: I highlighted important metrics such as total sales, top customers, and how sales changed across different dates so that the information is easy to understand.
+- User-Driven Exploration: I used filters for regions, categories, and time ranges to let users explore the data in different ways.
+- Effective Visuals: I chose to use bar charts and line graphs to clearly show trends and how values change over time.
+
+## Power BI Model View / Spark SQL Schema
+
+![alt text](powerbi_model_view.png)
+
+## Query Results
+
+![alt text](query_results.png)
+
+## Final Dashboard / Charts
+
+![alt text](final_dashboard.png)
+
+-----
+
 ## Initial Package List
 
 - pip
