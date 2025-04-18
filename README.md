@@ -299,18 +299,24 @@ Visualizations generated during the analysis include:
 
 ### Results
 
+![alt text](data/results/sales_by_contact_method_pie.png)
 
+![alt text](data/results/category_sales_by_region.png)
 
+![alt text](data/results/products_sold_by_month_line_graph.png)
 
 ### Suggested Business Action
-- Focus on high-performing stores for additional marketing and product offerings.
 
-- Implement loyalty programs or targeted campaigns for the top customers to increase retention.
-
-- Use the monthly sales trend to forecast future sales and adjust inventory or marketing strategies accordingly.
+- Marketing and Outreach: Direct marketing and customer outreach efforts toward the most effective contact methods based on sales performance.
+- Product Stocking and Promotion: Tailor product stocking and promotional strategies based on regional performance, with a focus on high-performing categories
+- Forecasting and Resource Allocation: Use monthly sales trends for forecasting future sales and adjusting inventory or marketing strategies for high and low seasons.
+- Promotional Campaigns: Highlight top-selling products in upcoming campaigns to capitalize on their proven demand.
 
 ### Challenges
-Issues were encountered with the database schema, particularly with missing or incorrect column names. These were resolved by verifying the column names and ensuring proper data is available for analysis.
+Several challenges arose during the analysis, including:
+
+- Data Integrity Issues: Ensuring accurate joins across the sales, products, and customers tables was difficult, especially with mismatched keys or missing records. These issues were addressed by carefully cleaning the data and verifying column names.
+- Designing Visualizations: Handling many categories and regions in visualizations was challenging. Customization techniques were used to ensure clarity and readability while displaying all the relevant data.
 
 -----
 
