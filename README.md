@@ -256,6 +256,64 @@ The dashboard was created with the following goals in mind:
 
 -----
 
+## P6: BI Insights and Storytelling
+
+Three key objectives shaped the direction of this project:
+1. Total Sales by Preferred Contact Method
+2. Top Performing Products Category by Region
+3. Total Sales by Month and Products
+
+This analysis aims to assess sales performance from multiple perspectives, such as contact methods, product categories by region, monthly trends, and individual product performance. These insights are critical for optimizing customer outreach, regional product focus, and inventory management. By identifying which contact methods drive higher sales, understanding top-performing product categories in each region, and tracking monthly and product-level sales, the business can make more informed decisions in marketing strategies and operational efficiency.
+
+### Data Source
+The data used in this analysis was sourced from the Smart Store Database (smart_sales.db). The following tables and columns were used:
+
+sales table:
+- sale_date: The date of the sale.
+- sale_amount: Total dollar amount of the transaction.
+- customer_id: Identifier for the customer.
+- product_id: Identifier for the product sold.
+
+products table:
+- product_id: Unique product identifier.
+- category: Classification of the product.
+
+customers table:
+- customer_id: Identifier for the customer.
+- preferred_contact_method: Customer’s preferred communication channel (call, email, etc.).
+- region: Geographic region of the customer.
+
+### Tools
+Tools Used:
+- Matplotlib & Seaborn: Used to create meaningful visualizations, including bar charts and line graphs.
+- Pandas: Essential for data manipulation, aggregation, and performing OLAP-style transformations.
+- Python: The primary language used for analysis, data processing, and generating visualizations.
+- VSCode: Integrated development environment used for writing Python scripts, querying the SQLite database, and visualizing the results.
+- SQLite: Used to manage and extract structured data from the Smart Sales Database.
+
+### Workflow & Logic
+Visualizations generated during the analysis include:
+1. Sales by Contact Method: Pie chart showing how different methods contribute to overall sales.
+2. Category Sales by Region: Log-scaled bar chart showing the performance of product categories by region.
+3. Monthly Sales Trend: Line graph showing total sales per month, with individual product performance insights.
+
+### Results
+
+
+
+
+### Suggested Business Action
+- Focus on high-performing stores for additional marketing and product offerings.
+
+- Implement loyalty programs or targeted campaigns for the top customers to increase retention.
+
+- Use the monthly sales trend to forecast future sales and adjust inventory or marketing strategies accordingly.
+
+### Challenges
+Issues were encountered with the database schema, particularly with missing or incorrect column names. These were resolved by verifying the column names and ensuring proper data is available for analysis.
+
+-----
+
 ## Initial Package List
 
 - pip
