@@ -367,7 +367,7 @@ The data was sourced from:
 
 ![alt text](images/Results.PNG)
 
-![alt text](images/Tooltip.png)
+![alt text](images/Tooltips.png)
 
 ### Key Insights
 
