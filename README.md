@@ -320,6 +320,84 @@ Several challenges arose during the analysis, including:
 
 -----
 
+# LeBron James Career Stats Dashboard – Visualizing NBA Greatness Over Time
+
+---
+
+## Section 1. The Business Goal
+The goal of this project is to analyze LeBron James’ career statistics from 2003 to present. By identifying key trends, peak performance seasons, and overall career progression, this dashboard helps both fans and sports analysts gain deeper insights into LeBron’s impact and evolution over time.
+
+---
+
+## Section 2. Data Source
+The data was sourced from:
+- **Statmuse.com**: Web-based platform offering NBA career statistics.
+- The dataset includes key metrics such as points, assists, rebounds, steals, games played, field goals, free throws, and 3-point shots from 2003 to present.
+
+---
+
+## Section 3. Tools Used
+- **Power BI**: Used for data modeling, visualization, and dashboard design.
+- **Power Query Editor**: Used for data cleaning, transforming the season format, and checking data quality.
+- **Data Analysis Expressions (DAX)**: Used to calculate totals, averages, and rankings.
+
+---
+
+## Section 4. Workflow & Logic
+- Loaded career data into Power BI using the web connector.
+- Cleaned the data in Power Query Editor by:
+  - Checking column quality (`View > Column Quality`) to identify issues.
+  - Extracting the starting year from the `Season` column for better visual clarity.
+- Created calculated columns and measures using DAX for:
+  - Totals and averages of key stats.
+  - Ranking and sorting for top 5 scoring seasons and best 3-point years.
+- Built visualizations to explore trends and highlight career peaks.
+
+---
+
+## Section 5. Results
+
+### Visualizations
+
+- **Cards**: Summed and averaged stats for Points, Assists, Rebounds, and Steals.
+- **Line Chart**: Points per season to visualize scoring progression.
+- **Stacked Bar Chart**: Top 5 scoring seasons for peak performance analysis.
+- **Stacked Column Chart**: 3-point shots made by season.
+- **Tooltips**: Display Games Played, Field Goals, and Free Throws for deeper context on each visual.
+
+![alt text](images/Results.PNG)
+
+![alt text](images/Tooltip.png)
+
+### Key Insights
+
+- LeBron’s scoring has shown remarkable consistency, with clear peak years.
+- His 3-point shooting improved significantly in later seasons.
+- Playmaking and all-around contributions have remained strong throughout his career.
+
+---
+
+## Section 6. Suggested Business Action
+- **Performance Analysis for Commentary or Training**: Coaches, trainers, or broadcasters can use this data to discuss LeBron's evolution and optimize training for similar player types.
+- **Fan Engagement**: Media teams can build visual stories around his peak seasons, fueling conversation and engagement on sports platforms.
+- **Scouting Insights**: Use trends to help scout or compare rising players who mirror LeBron’s early performance trajectory.
+
+---
+
+## Section 7. Challenges
+- **Data Consistency Across Seasons**: Ensuring data accuracy for every NBA season was a challenge due to variations in stat formatting and availability.
+- **Metric Limitations**: Some seasons lacked advanced metrics like PER or efficiency ratings, which could offer even deeper analysis.
+- **Time Range**: The large number of seasons made it important to find a balance between detailed breakdowns and dashboard clarity.
+
+---
+
+## Section 8. Ethical Considerations
+- **Data Accuracy and Source Credibility**: Data was taken from a trusted NBA stats site (Statmuse), but should be verified against official NBA databases for critical decisions.
+- **Contextual Awareness**: Stats alone don’t capture context like injuries or team changes, so it’s important to avoid overgeneralization.
+- **Fan Bias and Misinterpretation**: Clear labeling and honest presentation were used to avoid feeding narrative bias or misleading conclusions.
+
+-----
+
 ## Initial Package List
 
 - pip
